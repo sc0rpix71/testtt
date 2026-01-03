@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Treasure Grid - Mini Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game">
+      <header>
+        <h1>Treasure Grid</h1>
+        <p>Use arrow keys or the buttons to move. Find the treasure and avoid the trap.</p>
+      </header>
+
+      <section class="status">
+        <div>Turns left: <span id="turns">20</span></div>
+        <div id="message">Good luck!</div>
+      </section>
+
+      <section id="board" class="board" aria-label="Game board"></section>
+
+      <section class="controls">
+        <button type="button" data-move="up">⬆️</button>
+        <div>
+          <button type="button" data-move="left">⬅️</button>
+          <button type="button" data-move="down">⬇️</button>
+          <button type="button" data-move="right">➡️</button>
+        </div>
+      </section>
+
+      <footer>
+        <button type="button" id="restart">Restart</button>
+      </footer>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
